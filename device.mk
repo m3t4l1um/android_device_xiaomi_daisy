@@ -84,3 +84,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
+
+# Call inherit from Ih8sn
+$(call inherit-product, vendor/extra/ih8sn/product.mk)
