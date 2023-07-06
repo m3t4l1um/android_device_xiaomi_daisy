@@ -76,5 +76,13 @@ PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name
 $(call inherit-product, build/target/product/verity.mk)
 endif
 
+# Java optimizations for SystemUI
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
