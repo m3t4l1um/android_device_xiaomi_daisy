@@ -10,3 +10,6 @@ persist.vendor.camera.aux.camera=1
 
 # SKU
 ro.boot.product.hardware.sku=qcrild
+
+# WFD
+media.wfd.max_resolution=5
