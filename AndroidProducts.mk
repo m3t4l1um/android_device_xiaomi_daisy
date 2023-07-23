@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_daisy.mk \
-    $(LOCAL_DIR)/lineage_sakura.mk
+    $(LOCAL_DIR)/aosp_daisy.mk \
+    $(LOCAL_DIR)/aosp_sakura.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_daisy-user \
-    lineage_daisy-userdebug \
-    lineage_daisy-eng \
-    lineage_sakura-user \
-    lineage_sakura-userdebug \
-    lineage_sakura-eng
+    aosp_daisy-user \
+    aosp_daisy-userdebug \
+    aosp_daisy-eng \
+    aosp_sakura-user \
+    aosp_sakura-userdebug \
+    aosp_sakura-eng
