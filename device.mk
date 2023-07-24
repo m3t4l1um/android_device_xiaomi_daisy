@@ -76,5 +76,17 @@ PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name
 $(call inherit-product, build/target/product/verity.mk)
 endif
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
+# Reduce the size of the system image
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUIGoogle \
+    NexusLauncherRelease
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
