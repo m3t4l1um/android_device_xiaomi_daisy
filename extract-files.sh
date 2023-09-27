@@ -11,6 +11,9 @@ function blob_fixup() {
         vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
             "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
             ;;
+        vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
+            grep -q "libhidlbase-v32.so" "${2}" || "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            ;;
     esac
 
     # For all ELF files
