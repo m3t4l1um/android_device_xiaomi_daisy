@@ -75,5 +75,9 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 endif
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/daisy/daisy-vendor.mk)
