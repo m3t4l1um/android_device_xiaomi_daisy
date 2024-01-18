@@ -49,11 +49,19 @@ endif
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 
+ifeq ($(TARGET_DEVICE), sakura)
+# Recovery
+BOARD_USES_FULL_RECOVERY_IMAGE := true
+endif
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-07-01
+
+# Sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/daisy/BoardConfigVendor.mk
