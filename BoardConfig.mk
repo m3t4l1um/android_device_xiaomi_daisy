@@ -60,5 +60,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-07-01
 
+# Sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/daisy/BoardConfigVendor.mk
