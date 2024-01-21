@@ -42,7 +42,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     TipsPrebuilt \
     talkback \
     USCCDM \
-    Velvet \
     Videos \
     Video \
     VZWAPNLib \
