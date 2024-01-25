@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_daisy.mk \
-    $(LOCAL_DIR)/aosp_sakura.mk
+    $(LOCAL_DIR)/mist_daisy.mk \
+    $(LOCAL_DIR)/mist_sakura.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_daisy-user \
-    aosp_daisy-userdebug \
-    aosp_daisy-eng \
-    aosp_sakura-user \
-    aosp_sakura-userdebug \
-    aosp_sakura-eng
+    mist_daisy-user \
+    mist_daisy-userdebug \
+    mist_daisy-eng \
+    mist_sakura-user \
+    mist_sakura-userdebug \
+    mist_sakura-eng
