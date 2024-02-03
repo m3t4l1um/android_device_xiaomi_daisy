@@ -14,16 +14,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 AB_OTA_UPDATER := false
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common ProjectEverest stuff.
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := false
-TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_CALL_RECORDING_SUPPORTED ?= true
+TARGET_SUPPORTS_BLUR := false
+WITH_GMS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := aosp_sakura
+PRODUCT_NAME := everest_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro

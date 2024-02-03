@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_daisy.mk \
-    $(LOCAL_DIR)/aosp_sakura.mk
+    $(LOCAL_DIR)/everest_daisy.mk \
+    $(LOCAL_DIR)/everest_sakura.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_daisy-user \
-    aosp_daisy-userdebug \
-    aosp_daisy-eng \
-    aosp_sakura-user \
-    aosp_sakura-userdebug \
-    aosp_sakura-eng
+    everest_daisy-user \
+    everest_daisy-userdebug \
+    everest_daisy-eng \
+    everest_sakura-user \
+    everest_sakura-userdebug \
+    everest_sakura-eng
