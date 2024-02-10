@@ -16,6 +16,12 @@ $(call inherit-product, device/xiaomi/daisy/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Blur
+TARGET_ENABLE_BLUR := false
+
+# Faceunlock
+TARGET_SUPPORTS_64_BIT_APPS := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
 PRODUCT_NAME := lineage_daisy
