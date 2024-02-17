@@ -17,7 +17,11 @@ $(call inherit-product, device/xiaomi/daisy/device.mk)
 # Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := false
 #BUILD_WITH_GAPPS := true
+
+# Inherit from ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
